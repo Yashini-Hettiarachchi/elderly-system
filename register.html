@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="https://img.icons8.com/ios-filled/50/25344a/elderly-person.png" alt="Elderly Care Logo" class="logo-img" />
+            <h1>Elderly Care System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="elderly_profiles.html">Elderly Profiles</a></li>
+                <li><a href="care_records.html">Care Records</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Register</h2>
+            <form action="register.php" method="post" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="caregiver" selected>Caregiver</option>
+                    <option value="admin">Admin</option>
+                    <option value="elder">Elder</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+            <p class="form-link">Already have an account? <a href="login.html">Login here</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Elderly Care System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

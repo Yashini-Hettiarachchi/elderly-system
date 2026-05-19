@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <?php
+    session_start();
+    if (!isset($_SESSION['user_id'])) {
+        header('Location: login.php');
+        exit();
+    }
+    ?>
+    <header>
+        <h1>Care Records</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <?php if ($_SESSION['role'] === 'admin' || $_SESSION['role'] === 'caregiver'): ?>
+                <li><a href="elderly_profiles.php">Elderly Profiles</a></li>
+                <li><a href="care_records.php" class="active">Care Records</a></li>
+                <?php elseif ($_SESSION['role'] === 'elder'): ?>
+                <li><a href="care_records.php" class="active">My Care Records</a></li>
+                <?php endif; ?>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
+    </header>

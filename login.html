@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="margin: 0 0 8px 0; font-size: 2.1rem; letter-spacing: 1.2px; font-weight: 700; color: #fff; padding: 14px 0 0 0;">Elderly Care System</h1>
+        <nav>
+            <ul>
+                <li><a href="elderly_profiles.php">Elderly Profiles</a></li>
+                <li><a href="care_records.php">Care Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Login</h2>
+            <form action="login.php" method="post" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p class="form-link">Don't have an account? <a href="register.html">Register here</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Elderly Care System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
