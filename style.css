@@ -2,7 +2,7 @@
 .styled-table th, .styled-table td {
     vertical-align: middle;
 }
-.styled-table th {
+ .styled-table th {
     background: linear-gradient(90deg, #25344a 80%, #1abc9c 100%);
     color: #fff;
     border-bottom: 2px solid #1abc9c;
@@ -10,7 +10,7 @@
 .styled-table tbody tr {
     transition: box-shadow 0.18s, background 0.18s;
 }
-.styled-table tbody tr:hover {
+ .styled-table tbody tr:hover {
     box-shadow: 0 2px 12px rgba(44,62,80,0.13);
     background: #e0f7fa !important;
 }
@@ -39,8 +39,9 @@
 }
 
 .card, .welcome {
-    box-shadow: 0 8px 32px rgba(44,62,80,0.13);
-    border: 1.5px solid #e0eafc;
+    box-shadow: 0 8px 32px rgba(26,38,54,0.13);
+    border: 1.5px solid #c3cfe2;
+    background: #fafdff;
 }
 
 .profile-form input, .profile-form select {
@@ -75,21 +76,21 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    color: #222;
+    color: #1a2636;
 }
+{
 
-
-header {
-    background: #25344a;
+    background: #1a2636;
     color: #fff;
-    padding: 14px 0 0 0;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.08);
+    padding: 18px 0 0 0;
+    box-shadow: 0 2px 16px rgba(26,38,54,0.10);
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
+    min-height: 70px;
     min-height: 64px;
 }
 
@@ -114,10 +115,6 @@ nav ul {
 
 nav ul li {
     display: inline;
-}
-
-
-nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.13rem;
@@ -126,7 +123,11 @@ nav ul li a {
     transition: background 0.18s, color 0.18s;
     font-weight: 500;
     letter-spacing: 0.5px;
-}
+    border-radius: 6px;
+    transition: background 0.18s, color 0.18s;
+    background: #16b3c1;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(22,179,193,0.13);
 nav ul li a:hover, nav ul li a.active {
     background: #1abc9c;
     color: #fff;
@@ -140,28 +141,28 @@ main {
     align-items: center;
     justify-content: flex-start;
     min-height: 60vh;
-    width: 100%;
-    margin-top: 36px;
-}
-
-
-.welcome {
-    background: #fff;
+    background: #fafdff;
     padding: 40px 32px 32px 32px;
     border-radius: 18px;
-    box-shadow: 0 6px 32px rgba(44,62,80,0.10);
+    box-shadow: 0 8px 32px rgba(26,38,54,0.10);
     text-align: center;
     margin-top: 0;
     max-width: 420px;
     width: 100%;
     margin-bottom: 32px;
-}
+    box-shadow: 0 6px 32px rgba(44,62,80,0.10);
+    text-align: center;
+    margin-top: 0;
+    color: #1a2636;
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+    font-weight: 700;
 
 
 .welcome h2 {
-    color: #25344a;
-    margin-bottom: 12px;
-    font-size: 1.7rem;
+    color: #2d3a4a;
+    font-size: 1.08rem;
+    margin-bottom: 1.1em;
     font-weight: 700;
 }
 
@@ -175,12 +176,12 @@ main {
 .welcome img {
     margin-top: 18px;
     width: 220px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(44,62,80,0.13);
-    border: 1.5px solid #e0e0e0;
-}
+    text-align: center;
+    color: #7a869a;
+    padding: 22px 0 12px 0;
+    background: none;
+    font-size: 1.04rem;
+    letter-spacing: 0.2px;
 
 
 footer {
@@ -236,7 +237,7 @@ nav ul li a:hover, nav ul li a.active {
 }
     display: block;
     margin-bottom: 13px;
-    color: #25344a;
+    color: #254a2b;
     font-weight: 600;
     letter-spacing: 0.2px;
 }
